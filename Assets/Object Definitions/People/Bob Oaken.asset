@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2e17c5f8b5a8741acc96d57500c31e, type: 3}
+  m_Name: Bob Oaken
+  m_EditorClassIdentifier: 
+  firstName: Bob
+  lastName: Oaken
+  alias: 
+  gender: 0
+  brawn: 93
+  speed: 31
+  aerial: 43
+  looks: 26
+  stamina: 0
+  mic: 26
+  moveList:
+  - {fileID: 11400000, guid: 58950317e2787b642b4e999cbd532375, type: 2}
+  - {fileID: 11400000, guid: 573af55f7122a0542ab1a5e1604d03de, type: 2}

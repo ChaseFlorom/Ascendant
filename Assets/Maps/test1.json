@@ -1,0 +1,806 @@
+{
+    "width": 10,
+    "height": 10,
+    "tiles": [
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 0
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 0
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 0
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 0
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 0
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 1
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 2
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 3
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 3
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 3
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 3
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 3
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 4
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 4
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 4
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 4
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 4
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 5
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 5
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 5
+        },
+        {
+            "tileName": "Ring",
+            "isRing": true,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 5
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 5
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 6
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 6
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 6
+        },
+        {
+            "tileName": "Wall",
+            "isRing": false,
+            "isPassable": false,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 6
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 7
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 8
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 0,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 1,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 2,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 3,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 4,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 5,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 6,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 7,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 8,
+            "yPos": 9
+        },
+        {
+            "tileName": "Floor",
+            "isRing": false,
+            "isPassable": true,
+            "z": 0,
+            "xPos": 9,
+            "yPos": 9
+        }
+    ]
+}

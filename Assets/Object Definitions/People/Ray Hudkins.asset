@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2e17c5f8b5a8741acc96d57500c31e, type: 3}
+  m_Name: Ray Hudkins
+  m_EditorClassIdentifier: 
+  firstName: Ray
+  lastName: Hudkins
+  alias: Ray Hudkins
+  gender: 1
+  brawn: 8
+  speed: 42
+  aerial: 74
+  looks: 25
+  stamina: 0
+  mic: 27
+  cardDeck:
+  - {fileID: 11400000, guid: 0d7b68491191f9b448efbf5b0d050fe3, type: 2}
+  - {fileID: 11400000, guid: c0c531f75de7e594c95584db1b2519fc, type: 2}
+  - {fileID: 11400000, guid: 0d7b68491191f9b448efbf5b0d050fe3, type: 2}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f474619729a094ea6fab0d2d02b64e, type: 3}
+  m_Name: New Outfit
+  m_EditorClassIdentifier: 
+  outfitName: New Outfit
+  parts:
+  - bodyPart: 1
+    hasArt: 1
+    replacesBase: 1
+    sortOffset: 0
+    downSprite: {fileID: 7495690334981848460, guid: 572a4370c6202ca4a922db884695db49, type: 3}
+    sideSprite: {fileID: -345564280372402601, guid: cacfda5b776fd904287c99a29ffa5535, type: 3}
+    upSprite: {fileID: -6152063072151795078, guid: 10c24ff4d9e6767468e677ed68f1d829, type: 3}
+  - bodyPart: 2
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: -2746061651814156054, guid: 572a4370c6202ca4a922db884695db49, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: 7715518606455984160, guid: 10c24ff4d9e6767468e677ed68f1d829, type: 3}
+  - bodyPart: 3
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 1820778387991045829, guid: 572a4370c6202ca4a922db884695db49, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: -1716140444677463198, guid: 10c24ff4d9e6767468e677ed68f1d829, type: 3}
+  - bodyPart: 4
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 0}
+    sideSprite: {fileID: 6990756368419367741, guid: cacfda5b776fd904287c99a29ffa5535, type: 3}
+    upSprite: {fileID: 0}
+  - bodyPart: 5
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 0}
+    sideSprite: {fileID: 3574223689729107976, guid: cacfda5b776fd904287c99a29ffa5535, type: 3}
+    upSprite: {fileID: 0}
+  recolorSlots:
+  - slotName: 
+    baseColor: {r: 0.8705883, g: 0.9215687, b: 0.9058824, a: 0}
+    relativeShades:
+    - {r: 0.77647066, g: 0.8431373, b: 0.83921576, a: 0}
+    targetColor: {r: 0.28234482, g: 1, b: 0, a: 0}
