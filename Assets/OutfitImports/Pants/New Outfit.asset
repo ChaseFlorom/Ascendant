@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f474619729a094ea6fab0d2d02b64e, type: 3}
+  m_Name: New Outfit
+  m_EditorClassIdentifier: 
+  outfitName: Pants
+  parts:
+  - bodyPart: 6
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 7220235939188362288, guid: 0ab6f31dc76f3964b82dfa160e5cb800, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: 4360389911956766206, guid: c459df384c5c19a4bbac863c33b9f5d9, type: 3}
+  - bodyPart: 7
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 6428205261077764972, guid: 0ab6f31dc76f3964b82dfa160e5cb800, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: 4057858422822471666, guid: c459df384c5c19a4bbac863c33b9f5d9, type: 3}
+  - bodyPart: 8
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 0}
+    sideSprite: {fileID: 3172823986849120180, guid: 36e33fd1960d5ed4c8449aab8c44fabb, type: 3}
+    upSprite: {fileID: 0}
+  - bodyPart: 9
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: 0}
+    sideSprite: {fileID: -8602340990622380188, guid: 36e33fd1960d5ed4c8449aab8c44fabb, type: 3}
+    upSprite: {fileID: 0}
+  - bodyPart: 10
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: -479955636835777380, guid: 0ab6f31dc76f3964b82dfa160e5cb800, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: 1336504805252651375, guid: c459df384c5c19a4bbac863c33b9f5d9, type: 3}
+  - bodyPart: 11
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: -6738274994881785423, guid: 0ab6f31dc76f3964b82dfa160e5cb800, type: 3}
+    sideSprite: {fileID: 0}
+    upSprite: {fileID: 1991621835822005497, guid: c459df384c5c19a4bbac863c33b9f5d9, type: 3}
+  recolorSlots: []

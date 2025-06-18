@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    [SerializeField] private float moveSpeed = 10f;
+    [Header("Target Settings")]
+    [SerializeField] private Transform target;
     [SerializeField] private float smoothTime = 0.1f;
     [SerializeField] private Vector2 moveLimits = new Vector2(50f, 50f); // X and Y limits
 
@@ -20,22 +20,30 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         targetZoom = Camera.main.orthographicSize;
+        
+        // If no target is set, try to find the player
+        if (target == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                target = player.transform;
+            }
+            else
+            {
+                Debug.LogWarning("No target set for camera and no player found in scene!");
+            }
+        }
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        HandleMovement();
-        HandleZoom();
-    }
-
-    private void HandleMovement()
-    {
-        // Get input
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        if (target == null)
+            return;
 
         // Calculate target position
-        Vector3 targetPosition = transform.position + new Vector3(horizontal, vertical, 0) * moveSpeed * Time.deltaTime;
+        Vector3 targetPosition = target.position;
+        targetPosition.z = transform.position.z; // Keep the camera's z position
 
         // Clamp position within limits
         targetPosition.x = Mathf.Clamp(targetPosition.x, -moveLimits.x, moveLimits.x);
@@ -43,6 +51,8 @@ public class CameraController : MonoBehaviour
 
         // Smoothly move to target position
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+
+        HandleZoom();
     }
 
     private void HandleZoom()

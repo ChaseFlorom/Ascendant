@@ -8,9 +8,14 @@ public class CharacterAnimatorController : MonoBehaviour
 
     public void SetBool(string parameterName, bool value)
     {
-        if (downAnimator) downAnimator.SetBool(parameterName, value);
-        if (upAnimator) upAnimator.SetBool(parameterName, value);
-        if (sideAnimator) sideAnimator.SetBool(parameterName, value);
+        if (IsValidAnimator(downAnimator)) downAnimator.SetBool(parameterName, value);
+        if (IsValidAnimator(upAnimator)) upAnimator.SetBool(parameterName, value);
+        if (IsValidAnimator(sideAnimator)) sideAnimator.SetBool(parameterName, value);
+    }
+
+    private bool IsValidAnimator(Animator animator)
+    {
+        return animator != null && animator.runtimeAnimatorController != null;
     }
 
     public void ActivateDown()

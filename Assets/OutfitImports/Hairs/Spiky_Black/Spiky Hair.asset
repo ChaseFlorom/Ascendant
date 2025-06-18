@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f474619729a094ea6fab0d2d02b64e, type: 3}
+  m_Name: Spiky Hair
+  m_EditorClassIdentifier: 
+  outfitName: New Outfit
+  parts:
+  - bodyPart: 0
+    hasArt: 1
+    replacesBase: 0
+    sortOffset: 0
+    downSprite: {fileID: -8807138800373799943, guid: 1e9c9d31944bef3418ac3c8f17fcee3b, type: 3}
+    sideSprite: {fileID: -5671559897851939897, guid: 75eed167623cde84a8fac0c2bc04d355, type: 3}
+    upSprite: {fileID: -567073895627750809, guid: 644518ca53cbb7545a581c6fff43ef96, type: 3}
+  recolorSlots:
+  - slotName: 
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    relativeShades: []
+    targetColor: {r: 0, g: 0, b: 0, a: 0}

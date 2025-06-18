@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9023890139371566544}
   - component: {fileID: 7412609800671355878}
-  - component: {fileID: 3199349815865931037}
   - component: {fileID: 8620985692646555278}
   m_Layer: 0
   m_Name: PlayerCharacter 1
@@ -52,27 +51,6 @@ MonoBehaviour:
   downAnimator: {fileID: 3169728741941160995}
   upAnimator: {fileID: 7016552336476167901}
   sideAnimator: {fileID: 3004707946978659572}
---- !u!114 &3199349815865931037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509210804059758031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf839e75fd782644a07c6100d5efd02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  floorTilemap: {fileID: 0}
-  solidsTilemap: {fileID: 0}
-  highlightTilemap: {fileID: 0}
-  highlightTile: {fileID: 11400000, guid: 4b9f5a9601ef9824a9351e5bf9470447, type: 2}
-  hoverTile: {fileID: 11400000, guid: 63c67b59b6de3d14c89da82525aad892, type: 2}
-  movementRange: 5
-  moveSpeed: 3
-  xOffset: 0.5
-  characterAnimController: {fileID: 7412609800671355878}
 --- !u!114 &8620985692646555278
 MonoBehaviour:
   m_ObjectHideFlags: 0
