@@ -580,7 +580,7 @@ namespace Wrestleverse.Outfits
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
             if (Application.isPlaying)
             {
-                Debug.Log($"[PaletteSwap] PropertyBlock for {sr.gameObject.name}: Original[0]={block.GetColor("_OriginalColor0")}, Target[0]={block.GetColor("_TargetColor0")}");
+               // Debug.Log($"[PaletteSwap] PropertyBlock for {sr.gameObject.name}: Original[0]={block.GetColor("_OriginalColor0")}, Target[0]={block.GetColor("_TargetColor0")}");
             }
 #endif
         }

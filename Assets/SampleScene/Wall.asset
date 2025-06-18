@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7277702762047024864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: bb6956a1-8a19-4560-af8e-0aea462c0256
+  editorPosition: {x: 747, y: 253}
+  nextNode: {fileID: 0}
+  message: We've clicked the wall.
+--- !u!114 &-7215006052645231032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: 6305a1ab-c732-45db-9dcd-6a648691a52d
+  editorPosition: {x: 995, y: 487}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &-5890893748348647467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: 39df41e8-1c49-4c95-a70b-3dbc56c8935b
+  editorPosition: {x: 667, y: 243}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &-2953384165075049622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::StartNode
+  guid: 00fea07e-2c74-4272-9b12-26214f815eb9
+  editorPosition: {x: 125, y: 256}
+  nextNode: {fileID: 3916028758667359405}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b6fc21bdc070046b1b420593611e24, type: 3}
+  m_Name: Wall
+  m_EditorClassIdentifier: 
+  startNode: {fileID: 7750710399327649116}
+--- !u!114 &2897870914568426954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: 21604151-a48f-4d9b-b010-ef12c20fec4a
+  editorPosition: {x: 748, y: 327}
+  nextNode: {fileID: -7215006052645231032}
+  message: Debug!
+--- !u!114 &3916028758667359405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: 8ec17148-f736-454c-9f62-f5c58733fda1
+  editorPosition: {x: 734, y: 364}
+  nextNode: {fileID: 0}
+  message: You've clicked the wall
+--- !u!114 &4616313375417523074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db18f095308593d4289ea6a0f75b05b1, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  guid: 73a09768-8841-40c2-8876-fb31f5ce968e
+  editorPosition: {x: 511, y: 245}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &7750710399327649116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe1e2ec0abe435428da37aa37ab6e68, type: 3}
+  m_Name: StartNode
+  m_EditorClassIdentifier: 
+  guid: bfba83f6-259a-434f-a5d7-90e47473d0c5
+  editorPosition: {x: 100, y: 200}
+  nextNode: {fileID: 0}
+--- !u!114 &8288629941802152104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: 4546b50a-2ebf-450b-8ce2-3dc78f77729d
+  editorPosition: {x: 575, y: 219}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &8398832950306880788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::StartNode
+  guid: 041ac8f1-d098-4133-a790-9b45f7665096
+  editorPosition: {x: 100, y: 200}
+  nextNode: {fileID: 0}

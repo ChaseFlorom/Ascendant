@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4783450189277921186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: b6d928c8-be78-4c74-9a89-7ab82c522e7c
+  editorPosition: {x: 891, y: 313}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &-3455870741034052907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: f0b372b3-6c8d-4a85-8b59-a35c11dafca8
+  editorPosition: {x: 1060, y: 371}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &-1788788945365739792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: b79ffbeb-b1be-4bd6-af22-fe63ba821483
+  editorPosition: {x: 1281, y: 350}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b6fc21bdc070046b1b420593611e24, type: 3}
+  m_Name: NewActionGraph
+  m_EditorClassIdentifier: 
+  startNode: {fileID: 5983783250169022883}
+--- !u!114 &2486771839243083983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::DebugLogNode
+  guid: c51c87b3-d3aa-4ce4-a48a-80c0b40a9a79
+  editorPosition: {x: 1018, y: 295}
+  nextNode: {fileID: 0}
+  message: Debug!
+--- !u!114 &5983783250169022883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: StartNode
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::StartNode
+  guid: 07c6a228-ccee-4a56-bf3b-431e610e715f
+  editorPosition: {x: 310, y: 271}
+  nextNode: {fileID: 0}

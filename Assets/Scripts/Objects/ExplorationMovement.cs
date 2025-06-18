@@ -17,6 +17,10 @@ public class ExplorationMovement : MonoBehaviour
     private Vector3Int currentCell;
     private Vector3 lastDirection;
     private Vector2Int queuedDirection = Vector2Int.zero;
+    private Vector2Int currentFacingDirection = Vector2Int.down; // Track current facing direction
+
+    public Vector3Int CurrentCell => currentCell;
+    public Vector2Int CurrentFacingDirection => currentFacingDirection;
 
     private void Start()
     {
@@ -47,6 +51,8 @@ public class ExplorationMovement : MonoBehaviour
 
         if (queuedDirection != Vector2Int.zero)
         {
+            // Always update facing direction to the last intended direction
+            currentFacingDirection = queuedDirection;
             Vector3Int newCell = currentCell + new Vector3Int(queuedDirection.x, queuedDirection.y, 0);
             Vector3 intendedDirection = new Vector3(queuedDirection.x, queuedDirection.y, 0);
             if (IsValidMove(newCell))
