@@ -16,6 +16,7 @@ public class ExplorationMovement : MonoBehaviour
     private bool isMoving = false;
     private Vector3Int currentCell;
     private Vector3 lastDirection;
+    private Vector2Int queuedDirection = Vector2Int.zero;
 
     private void Start()
     {
@@ -28,6 +29,13 @@ public class ExplorationMovement : MonoBehaviour
         if (GameStateManager.Instance.IsInBattle())
             return;
 
+        // Always record the latest input
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        queuedDirection = Vector2Int.zero;
+        if (horizontal != 0) queuedDirection.x = (int)Mathf.Sign(horizontal);
+        else if (vertical != 0) queuedDirection.y = (int)Mathf.Sign(vertical);
+
         HandleMovementInput();
         UpdateMovement();
     }
@@ -37,23 +45,9 @@ public class ExplorationMovement : MonoBehaviour
         if (isMoving)
             return;
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-
-        if (horizontal != 0 || vertical != 0)
+        if (queuedDirection != Vector2Int.zero)
         {
-            Vector3Int newCell = currentCell;
-            
-            if (horizontal != 0)
-            {
-                newCell.x += (int)Mathf.Sign(horizontal);
-            }
-            else if (vertical != 0)
-            {
-                newCell.y += (int)Mathf.Sign(vertical);
-            }
-
-            // Check if the new cell is valid
+            Vector3Int newCell = currentCell + new Vector3Int(queuedDirection.x, queuedDirection.y, 0);
             if (IsValidMove(newCell))
             {
                 currentCell = newCell;
@@ -63,6 +57,10 @@ public class ExplorationMovement : MonoBehaviour
                 // Set animation direction
                 lastDirection = targetPosition - transform.position;
                 ActivateRig(lastDirection);
+
+                // Set isWalking to true only when movement starts
+                if (characterAnimController)
+                    characterAnimController.SetBool("isWalking", true);
             }
         }
     }
@@ -70,19 +68,7 @@ public class ExplorationMovement : MonoBehaviour
     private void UpdateMovement()
     {
         if (!isMoving)
-        {
-            // Ensure animation is in idle state when not moving
-            if (characterAnimController)
-            {
-                characterAnimController.SetBool("isWalking", false);
-            }
             return;
-        }
-
-        if (characterAnimController)
-        {
-            characterAnimController.SetBool("isWalking", true);
-        }
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
@@ -91,7 +77,23 @@ public class ExplorationMovement : MonoBehaviour
             transform.position = targetPosition;
             isMoving = false;
 
-            // Ensure we're in the correct idle state based on last direction
+            // After finishing a move, immediately start moving in the queued direction if valid
+            if (queuedDirection != Vector2Int.zero)
+            {
+                Vector3Int nextCell = currentCell + new Vector3Int(queuedDirection.x, queuedDirection.y, 0);
+                if (IsValidMove(nextCell))
+                {
+                    currentCell = nextCell;
+                    targetPosition = CellToWorldSnapped(nextCell);
+                    isMoving = true;
+                    lastDirection = targetPosition - transform.position;
+                    ActivateRig(lastDirection);
+                    // Do NOT set isWalking to false here
+                    return;
+                }
+            }
+
+            // Only set isWalking to false if not moving again
             if (characterAnimController)
             {
                 characterAnimController.SetBool("isWalking", false);
@@ -123,12 +125,12 @@ public class ExplorationMovement : MonoBehaviour
         if (absX > absY)
         {
             bool facingLeft = (dir.x > 0);
-            characterAnimController.ActivateSide(facingLeft);
+            characterAnimController.ActivateSide(facingLeft, isMoving);
         }
         else
         {
-            if (dir.y > 0) characterAnimController.ActivateUp();
-            else characterAnimController.ActivateDown();
+            if (dir.y > 0) characterAnimController.ActivateUp(isMoving);
+            else characterAnimController.ActivateDown(isMoving);
         }
     }
 

@@ -91,6 +91,29 @@ namespace Wrestleverse.Outfits
             Rebuild();
         }
 
+        /// <summary>
+        /// Sync overlays for a specific body part to match the base part's active state. Call from Animation Events.
+        /// </summary>
+        public void SyncOverlayActiveState(string partName)
+        {
+            var root = GetCurrentDirectionRoot();
+            if (root == null) return;
+            var basePartT = root.Find(partName);
+            if (basePartT == null) return;
+            bool baseActive = basePartT.gameObject.activeSelf;
+
+            foreach (var kvp in _overlayRenderersAllDirections)
+            {
+                var (direction, part, outfit) = kvp.Key;
+                if (direction != currentDirection) continue;
+                if (part.ToString() != partName) continue;
+                var overlaySr = kvp.Value;
+                if (overlaySr == null) continue;
+                var overlayGo = overlaySr.gameObject;
+                overlayGo.SetActive(baseActive);
+            }
+        }
+
         #endregion
 
         #region Unity callbacks ---------------------------------------------------------------
