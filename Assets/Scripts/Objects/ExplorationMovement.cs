@@ -48,6 +48,7 @@ public class ExplorationMovement : MonoBehaviour
         if (queuedDirection != Vector2Int.zero)
         {
             Vector3Int newCell = currentCell + new Vector3Int(queuedDirection.x, queuedDirection.y, 0);
+            Vector3 intendedDirection = new Vector3(queuedDirection.x, queuedDirection.y, 0);
             if (IsValidMove(newCell))
             {
                 currentCell = newCell;
@@ -61,6 +62,14 @@ public class ExplorationMovement : MonoBehaviour
                 // Set isWalking to true only when movement starts
                 if (characterAnimController)
                     characterAnimController.SetBool("isWalking", true);
+            }
+            else
+            {
+                // Can't move, but still face the intended direction
+                lastDirection = intendedDirection;
+                ActivateRig(lastDirection);
+                if (characterAnimController)
+                    characterAnimController.SetBool("isWalking", false);
             }
         }
     }
