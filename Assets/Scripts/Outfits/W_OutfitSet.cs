@@ -188,13 +188,11 @@ namespace Wrestleverse.Outfits
         public class W_OutfitSetEditor : UnityEditor.Editor
         {
             private UnityEditor.SerializedProperty outfitsProp;
-            private UnityEditor.SerializedProperty directionProp;
             private W_OutfitSet set;
             private void OnEnable()
             {
                 set = (W_OutfitSet)target;
                 outfitsProp = serializedObject.FindProperty("equippedOutfits");
-                directionProp = serializedObject.FindProperty("currentDirection");
             }
             public override void OnInspectorGUI()
             {
@@ -207,11 +205,33 @@ namespace Wrestleverse.Outfits
                     var outfitProp = outfitsProp.GetArrayElementAtIndex(i);
                     var baseOutfitProp = outfitProp.FindPropertyRelative("baseOutfit");
                     var toleranceProp = outfitProp.FindPropertyRelative("Tolerance");
-                    EditorGUILayout.BeginVertical("box");
+                    EditorGUILayout.BeginVertical("HelpBox");
+
+                    // Bold label with outfit name or index
+                    string outfitName = baseOutfitProp.objectReferenceValue != null ? baseOutfitProp.objectReferenceValue.name : $"Outfit {i + 1}";
+                    EditorGUILayout.LabelField(outfitName, EditorStyles.boldLabel);
+
                     EditorGUILayout.PropertyField(baseOutfitProp, new GUIContent($"Base Outfit"));
                     EditorGUILayout.Slider(toleranceProp, 0f, 1f, new GUIContent("Color Match Tolerance"));
                     EditorGUILayout.PropertyField(outfitProp.FindPropertyRelative("recolorSlots"), true);
+                    EditorGUILayout.Space();
+                    if (GUILayout.Button("Remove Outfit"))
+                    {
+                        outfitsProp.DeleteArrayElementAtIndex(i);
+                        serializedObject.ApplyModifiedProperties();
+                        set.Rebuild();
+                        break;
+                    }
                     EditorGUILayout.EndVertical();
+                    // Add separator and extra space between outfits
+                    if (i < outfitsProp.arraySize - 1)
+                    {
+                        EditorGUILayout.Space(6);
+                        GUIStyle line = new GUIStyle("box");
+                        Rect rect = GUILayoutUtility.GetRect(1, 2, GUILayout.ExpandWidth(true));
+                        EditorGUI.DrawRect(rect, new Color(0.5f, 0.5f, 0.5f, 0.5f));
+                        EditorGUILayout.Space(6);
+                    }
                 }
                 // Add button to add a new outfit
                 if (GUILayout.Button("+ Add Outfit"))
@@ -224,14 +244,9 @@ namespace Wrestleverse.Outfits
                     serializedObject.ApplyModifiedProperties();
                 }
                 EditorGUILayout.Space();
-                UnityEditor.EditorGUILayout.PropertyField(directionProp);
                 bool changed = EditorGUI.EndChangeCheck();
                 serializedObject.ApplyModifiedProperties();
                 if (changed)
-                {
-                    set.Rebuild();
-                }
-                if (GUILayout.Button("Refresh Outfits"))
                 {
                     set.Rebuild();
                 }
